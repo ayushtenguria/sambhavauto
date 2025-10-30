@@ -1,0 +1,101 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-car",
+      "description": "A collage of Maruti Suzuki cars",
+      "imageUrl": "https://vvcsamnwkhurqruadimm.supabase.co/storage/v1/object/public/Hero/1600x570%20webp.webp",
+      "imageHint": "maruti suzuki cars"
+    },
+    {
+      "id": "appointment-car",
+      "description": "Side view of a white Maruti Suzuki Grand Vitara",
+      "imageUrl": "https://vvcsamnwkhurqruadimm.supabase.co/storage/v1/object/public/Hero/victoris-exterior-left-side-view.webp",
+      "imageHint": "white suv"
+    },
+    {
+      "id": "service-1",
+      "description": "A mechanic working on a car engine.",
+      "imageUrl": "https://images.unsplash.com/photo-1622634351336-b7b53a4e98ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBtYWludGVuYW5jZXxlbnwwfHx8fDE3NTkzMDk4MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car maintenance"
+    },
+    {
+      "id": "service-2",
+      "description": "Mechanic working on a car engine.",
+      "imageUrl": "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYXIlMjBlbmdpbmV8ZW58MHx8fHwxNzU5MDQxNzY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car engine"
+    },
+    {
+      "id": "service-3",
+      "description": "A shiny, freshly painted red car.",
+      "imageUrl": "https://images.unsplash.com/photo-1616421233882-b7a54483e5a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXIlMjBwYWludGluZ3xlbnwwfHx8fDE3NTkwNDIxNjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car painting"
+    },
+    {
+      "id": "service-4",
+      "description": "A car's air conditioning vents with cool air flowing.",
+      "imageUrl": "https://images.unsplash.com/photo-1542841791-19762c2a7a93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBhY3xlbnwwfHx8fDE3NTkwNDIyMDZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "car ac"
+    },
+    {
+      "id": "service-5",
+      "description": "Close-up of a high-performance car brake disc and caliper.",
+      "imageUrl": "https://images.unsplash.com/photo-1599432432049-92435ba62240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXIlMjBicmFrZXN8ZW58MHx8fHwxNzU5MDQyMjc5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "car brakes"
+    },
+    {
+      "id": "service-6",
+      "description": "A mechanic changing a car tire in a garage.",
+      "imageUrl": "https://images.unsplash.com/photo-1566055849433-55d535133649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjB0aXJlJTIwY2hhbmdlfGVufDB8fHx8MTc1OTAyOTE4Mnww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "car tire"
+    },
+    {
+      "id": "service-7",
+      "description": "A car's automatic transmission gear stick.",
+      "imageUrl": "https://images.unsplash.com/photo-1517672156832-90a071f46345?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjB0cmFuc21pc3Npb258ZW58MHx8fHwxNzU5MDQyNDMyfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "car transmission"
+    },
+    {
+      "id": "service-8",
+      "description": "A complex view of a car's electrical wiring system.",
+      "imageUrl": "https://images.unsplash.com/photo-1581092921533-784c245ad128?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBlbGVjdHJpY2FsfGVufDB8fHx8MTc1OTAzMDI4M3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "car electrical"
+    },
+     {
+      "id": "service-9",
+      "description": "Person cleaning the interior of a car.",
+      "imageUrl": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBjbGVhbmluZ3xlbnwwfHx8fDE3NTkzMDk4ODJ8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "car cleaning"
+    },
+    {
+      "id": "service-10",
+      "description": "Car with front-end damage after an accident.",
+      "imageUrl": "https://images.unsplash.com/photo-1578335384137-f26c7595c567?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBhY2NpZGVudHxlbnwwfHx8fDE3NTkzMDk5Mjh8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "car accident"
+    },
+    {
+      "id": "blog-1",
+      "description": "Orange sports car parked",
+      "imageUrl": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvcmFuZ2UlMjBwb3JzY2hlfGVufDB8fHx8MTc1OTEyNDg4OHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "orange car"
+    },
+    {
+      "id": "blog-2",
+      "description": "Woman in red jacket getting out of a red car",
+      "imageUrl": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvcmFuZ2UlMjBwb3JzY2hlfGVufDB8fHx8MTc1OTEyNDg4OHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman car"
+    },
+    {
+      "id": "blog-3",
+      "description": "Close up of a red car rim",
+      "imageUrl": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvcmFuZ2UlMjBwb3JzY2hlfGVufDB8fHx8MTc1OTEyNDg4OHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "car rim"
+    },
+    {
+      "id": "blog-4",
+      "description": "Front view of an orange mercedes sports car",
+      "imageUrl": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcmFuZ2UlMjBtZXJjZWRlc3xlbnwwfHx8fDE3NTkxMjUwMzh8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "orange mercedes"
+    }
+  ]
+}

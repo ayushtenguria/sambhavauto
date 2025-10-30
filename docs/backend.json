@@ -1,0 +1,59 @@
+{
+  "entities": {
+    "UserProfile": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "UserProfile",
+      "type": "object",
+      "description": "A user profile, typically created after a user signs up.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the user, matching the Firebase Auth UID."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "The user's email address."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "The user's display name."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the user profile was created."
+        }
+      },
+      "required": ["id", "email", "createdAt"]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous",
+      "google.com"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/users/{userId}",
+        "definition": {
+          "entityName": "UserProfile",
+          "schema": {
+            "$ref": "#/backend/entities/UserProfile"
+          },
+          "description": "Stores public-facing user profile information.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The user's unique identifier (UID) from Firebase Authentication."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "A top-level 'users' collection is created to store profile information for each user. This is a standard and scalable approach. The document ID for each user profile will be the user's UID from Firebase Authentication, which ensures a direct and secure link between the authenticated user and their data. This structure is simple, allows for easy querying of user data, and enables straightforward security rules where users can only access their own profile."
+  }
+}

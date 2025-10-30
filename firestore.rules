@@ -1,0 +1,123 @@
+/**
+ * @fileoverview Firestore Security Rules for Vehicle Error Code Data
+ *
+ * Core Philosophy:
+ * This ruleset provides public read access to vehicle error code information (error codes, causes, solutions, parts, tools, and warnings).
+ * Write access is restricted (TODO: Implement fine-grained access control if required in the future).
+ *
+ * Data Structure:
+ * The data is organized into flat, top-level collections. Each collection represents a specific entity type:
+ * - /error_codes/{errorCodeId}
+ * - /error_causes/{errorCauseId}
+ * - /solution_steps/{solutionStepId}
+ * - /parts/{partId}
+ * - /tools/{toolId}
+ * - /solution_step_parts/{solutionStepPartId}
+ * - /solution_step_tools/{solutionStepToolId}
+ * - /safety_warnings/{safetyWarningId}
+ *
+ * Key Security Decisions:
+ * - Public Read Access: All collections are publicly readable to facilitate broad access to error code data.
+ * - Write Restrictions: Write access (create, update, delete) is currently disabled for all collections. This can be updated in the future with more fine-grained access control.
+ */
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    /**
+     * @description Grants public read access to error codes and restricts write access.
+     * @path /error_codes/{errorCodeId}
+     * @allow (get, list): Any user can read error codes.
+     * @deny (create, update, delete): No user can create, update, or delete error codes.
+     * @principle Allows public read access for all error code documents.
+     */
+    match /error_codes/{errorCodeId} {
+      allow get, list: if true;
+      allow create, update, delete: if false;
+    }
+
+    /**
+     * @description Grants public read access to error causes and restricts write access.
+     * @path /error_causes/{errorCauseId}
+     * @allow (get, list): Any user can read error causes.
+     * @deny (create, update, delete): No user can create, update, or delete error causes.
+     * @principle Allows public read access for all error cause documents.
+     */
+    match /error_causes/{errorCauseId} {
+      allow get, list: if true;
+      allow create, update, delete: if false;
+    }
+
+    /**
+     * @description Grants public read access to solution steps and restricts write access.
+     * @path /solution_steps/{solutionStepId}
+     * @allow (get, list): Any user can read solution steps.
+     * @deny (create, update, delete): No user can create, update, or delete solution steps.
+     * @principle Allows public read access for all solution step documents.
+     */
+    match /solution_steps/{solutionStepId} {
+      allow get, list: if true;
+      allow create, update, delete: if false;
+    }
+
+    /**
+     * @description Grants public read access to parts and restricts write access.
+     * @path /parts/{partId}
+     * @allow (get, list): Any user can read parts.
+     * @deny (create, update, delete): No user can create, update, or delete parts.
+     * @principle Allows public read access for all part documents.
+     */
+    match /parts/{partId} {
+      allow get, list: if true;
+      allow create, update, delete: if false;
+    }
+
+    /**
+     * @description Grants public read access to tools and restricts write access.
+     * @path /tools/{toolId}
+     * @allow (get, list): Any user can read tools.
+     * @deny (create, update, delete): No user can create, update, or delete tools.
+     * @principle Allows public read access for all tool documents.
+     */
+    match /tools/{toolId} {
+      allow get, list: if true;
+      allow create, update, delete: if false;
+    }
+
+    /**
+     * @description Grants public read access to solution step parts and restricts write access.
+     * @path /solution_step_parts/{solutionStepPartId}
+     * @allow (get, list): Any user can read solution step parts.
+     * @deny (create, update, delete): No user can create, update, or delete solution step parts.
+     * @principle Allows public read access for all solution step part documents.
+     */
+    match /solution_step_parts/{solutionStepPartId} {
+      allow get, list: if true;
+      allow create, update, delete: if false;
+    }
+
+    /**
+     * @description Grants public read access to solution step tools and restricts write access.
+     * @path /solution_step_tools/{solutionStepToolId}
+     * @allow (get, list): Any user can read solution step tools.
+     * @deny (create, update, delete): No user can create, update, or delete solution step tools.
+     * @principle Allows public read access for all solution step tool documents.
+     */
+    match /solution_step_tools/{solutionStepToolId} {
+      allow get, list: if true;
+      allow create, update, delete: if false;
+    }
+
+    /**
+     * @description Grants public read access to safety warnings and restricts write access.
+     * @path /safety_warnings/{safetyWarningId}
+     * @allow (get, list): Any user can read safety warnings.
+     * @deny (create, update, delete): No user can create, update, or delete safety warnings.
+     * @principle Allows public read access for all safety warning documents.
+     */
+    match /safety_warnings/{safetyWarningId} {
+      allow get, list: if true;
+      allow create, update, delete: if false;
+    }
+  }
+}
